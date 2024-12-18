@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Q2 Project-Your Comeprehensive HTML </title>
+    <style>
+   
+   .decorative-border {
+    border: 5px solid #002c73;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background: #fffdd0 
+  }
+
+ /* Style for headings */
+  h2 {
+    background-color:#E3D4AD;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+    /* Marquee animation */
+  .marquee h1 {
+    display: inline-block;
+    animation: scroll-left 10s linear infinite;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    color: white;
+    margin: 0;
+  }
+
+   iframe {
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 2px 6px 8px #97001e /* Add shadow */
+    0.3s ease; /* Add hover effect */
+}
+
+iframe:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color:#E3D4AD;
+            color: #002c73;
+            margin: 0;
+            padding: 0;
+        }
+        
+         /* Styling the link */
+         a {
+            text-decoration: none;
+            color:  #002c73;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+          /* Style the table */
+          table {
+            width: 100%; /* Makes table span the container */
+            border-collapse: collapse; /* Merge borders into single lines */
+            background-color: /* Light background for the whole table */
+            #a9f6ff; 
+        }
+        
+          /* Style the header row */
+          thead th {
+            background-color:  #002c73; /* Purple header */
+            color: white; /* White text */
+            padding: 10px; /* Add spacing inside cells */
+            border: 1px solid rgb(161, 0, 0); /* Add a border for clarity */
+        }
+
+        header {
+            background-image: url('F1header1.jpg') ;
+            color: rgb(255, 255, 255);
+            padding: 40px 50px;
+            background-repeat: repeat;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #850000;
+            padding: 10px 0;
+        }
+        nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 250px;
+            border: 4px solid #002c73;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #b90000;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #ddd;
+        }
+        /* Horizontal Line Styling */
+        hr {
+            border: none;
+            height: 5px;
+            background: linear-gradient(to right, #ff0000, #FF9800, #e2b28d);
+            margin: 30px 0;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background:#001f51;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 18px;
+            animation: footerGlow 2s infinite alternate;
+        }
+
+        @keyframes footerGlow {
+            from { box-shadow: 0px 0px 5px #219ff3; }
+            to { box-shadow: 0px 0px 15px #ff0000; }
+        }
+        img {
+            width: 200px;
+            margin: 10px;
+            border: 2px solid #002c73;
+        }
+        h2 {
+            color: #a50000;
+            text-align: center;
+  
+        }
+        .rainbow-text {
+            animation: rainbow 2s linear infinite;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+        }
+
+        @keyframes rainbow {
+            0% { color:#f460ca; }
+            25% { color:#af60f4; }
+            50% { color:#60aaf4; }
+            75% { color: #60e3f4; }
+            100% { color:#60f4a0; }
+        }
+        
+        .container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: #fffdd0;
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.text-section {
+  background-color:#fffdd0;
+  border: 2px solid  #002c73;
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  color: rgb(171, 0, 0);
+}
+
+.image-section img {
+  border: 4px solid rgb(170, 0, 0);
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+  .text-section, .image-section {
+    width: 100%;
+  }
+}
+
+.view-project-button {
+    display: inline-block;
+    background-color: rgb(255, 0, 0);   
+    color: #002c73;              
+    padding: 10px 22px;        
+    font-size: 16px;         
+    text-decoration: none;    
+    border: none;
+    border-radius: 5px;       
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-project-button:hover {
+    background-color:  #002c73;  
+}
+
+        /* Header Styling */
+        .header {
+            background: linear-gradient(to right, #084376, #0976d6, #a90000);
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-family: "Georgia", serif;
+            font-size: 25px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+            letter-spacing: 3px;
+            animation: glow 3s infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 2px 2px 5px #68d2ff; }
+            to { text-shadow: 0px 0px 15px #02a6bc; }
+        }
+
+        /* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeIn 2s ease-in-out;
+}
+
+header h1 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+footer {
+    animation: fadeIn 2s ease-in-out;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+    <marquee behavior="slide" direction="right" scrollamount="10"><h1>About Me, Myself: A Showcase of me personally</h1></marquee>
+    </header>
+
+    <nav>
+        <a href="#about-me">About Me</a>
+        <a href="#education-skills">Education & Skills</a>
+        <a href="#hobbies-interests">Hobbies & Interests</a>
+        <a href="#What's More About My Interests">What's More About My Interests?</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact-info">Contact Information</a>
+    </nav>
+
+    <section id="about-me">
+        <div class="header">
+        <h2 class="rainbow-text">About Me: Story Of My Life</h2>
+        </div>
+        <div class="decorative-border">
+        <font face= "Snell Roundhand, cursive" color="Maroon">
+            <p style="background-color:#fffdd0 ">
+            The Idlers and the Fools I am not a typical child. I was born 2 months earlier than my supposed birth month. 
+            Born on March 5th 2011 through cesarean section in a catholic hospital in Santa Mesa Manila. 
+            Though I was a preemie baby, I had a strong bones and a very healthy physique, 
+            The pediatrician told my parents that I could be either extremely smart or I could be part of the abnormal spectrum. 
+            So the doctor's decide to place me in an incubator for a month under observation and considered to be in intensive care. <br> <br>
+
+            My mom never thought less but instead she trust God with his will and prayed that I will grow fast since I was a toothpaste tube size baby too small 
+            for nurses and doctors professional observation. 
+            But still mom is eager to make me grow normal and strong. In the hospital I was known as the miracle baby after a month of observation. 
+            All my lab works came out normal and I was already a little bigger now size of a 1.5 liter pop soda. <br> <br>
+            
+            And so, at the age of One I can speak the language well. No baby talk, my mom always talk to me in a normal way and so it was easy for me to learn to talk. 
+            I was not a sickly baby despite of my being a premature. I am always fascinated on robots and gadgets and also the constellation. 
+            Everytime my mom and I goes out of the house and enjoy the open air, she always tell me stories about the constellation and how they symbolize star-crossed lovers, 
+            About the gods and goddesses. 
+            This inspired me to dream about going to the moon and see how great and wonderful God's creation.</p> </font> </div>
+    </section>
+
+    <section id="education-skills">
+        <div class="header">
+        <h2 class="rainbow-text">Education & Skills</h2>
+        </div>
+        <font face= "Snell Roundhand, cursive" color="Maroon">
+        <div class="decorative-border">
+       <p>I studied for 6 years and graduated from PASIG CENTRAL ELEMENTARY SCHOOL. <br>
+            And now I am currently studying in RIZAL HIGH SCHOOL Grade 8<br><br>
+        
+            The past lessons have helped me gain skills in:
+        <ul>
+            <li>HTML and CSS Basics</li>
+            <li>Creating webpages</li>
+            <li>Using advanced tags like <code>&lt;table&gt;</code>, <code>&lt;iframe&gt;</code>, and using the CSS styling</li>
+            <li>Adding different colors to portions of paragraphs</li>
+            <li>Adding gifs and images</li>
+            <li>Being able to add different behaviors of Marquee</li>
+            <li>Creating Hyperlinks upon a website</li>
+            <li>Drawing images using PowerPoint</li>
+            <li>Combining HTML websites in one folder</li>
+            <li>Using different inline styles</li>
+            <li>How to use embedded frame</li>
+            <li>Using advanced CSS codings</li> </p>
+        </div>
+        </p>
+        </font>
+        </ul>
+    </section>
+
+    <section id="hobbies-interests">
+        <div class="header">
+        <h2 class="rainbow-text">Hobbies & Interests</h2>
+        </div>
+        <font face= "Snell Roundhand, cursive" color="Maroon">
+        <div class="decorative-border">
+        <p>Here are some of my hobbies:</p>
+        <ol>
+            <li>- At number one of course is <b>watching Formula One Racing 🏎</b></li>
+            <li>- Always attending <b>swimming lessons</b> every summer break </li>
+            <li>- Listening to Music especially <b>Billie Eilish, Kanye west, Childish Gambino, Tyler The Creator, and Ariana Grande</b> </li>
+            <li>- and <b>Drawing</b>
+                <ul>
+                    <li>Sketching</li>
+                    <li>Painting</li>
+                </font>
+                <p>Here are the links to my interests:</p>
+                <td><a href="https://www.formula1.com/" class="view-project-button" target="_blank">Formula One Official Website</a></td> <br> <br> 
+                <td><a href="https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH" class="view-project-button" target="_blank">Billie Eilish on Spotify</a></td> <br> <br>
+                <td><a href="https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x" class="view-project-button" target="_blank">Kanye West on Spotify</a></td> <br> <br> 
+                <td><a href="https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL" class="view-project-button" target="_blank">Childish Gambino on Spotify</a></td> <br> <br>
+                <td><a href="https://open.spotify.com/artist/4V8LLVI7PbaPR0K2TGSxFF" class="view-project-button" target="_blank">Tyler, The Creator on Spotify</a></td> <br> <br>
+                <td><a href="https://open.spotify.com/artist/66CXWjxzNUsdJxJ2JdwvnR" class="view-project-button" target="_blank">Ariana Grande on Spotify</a></td> <br> <br>
+            </div>
+            </ul>
+            </li>
+        </ol>
+    </section>
+
+    <section id="What's More About My Interests?">
+        <div class="header">
+        <h2 class="rainbow-text">What's More About My Interests?</h2>
+        </div>
+        <font face= "Snell Roundhand, cursive" color="Maroon">
+        
+            <div class="decorative-border">
+            <div class="container">
+                <div class="text-section">
+                <h4>Formula One</h4>
+                  <p>Have you ever seen a sport that moves all around the globe, with 24 high-octane races in just one year? Welcome to Formula 1, the ultimate motorsport spectacle where speed, technology, and human skill collide. Since its inception in 1950, F1 has showcased the fastest single-seater race cars, piloted by the most elite drivers on the planet, all competing for glory on some of the world's most thrilling circuits. Imagine the adrenaline rush as cars fly through the narrow streets of the Monaco Grand Prix, or roar down the straights of Italy's Monza Circuit, aptly known as the “Temple of Speed.” Feel the intensity of Silverstone in the UK, where it all began, or the rollercoaster ride of Belgium's Spa-Francorchamps with its legendary Eau Rouge corner. From the dazzling night lights of Yas Marina in Abu Dhabi to the heart-pounding curves of Japan's Suzuka Circuit, each race offers a unique challenge and a feast for the senses. F1 is not just a race; it's a world tour of speed, innovation, and drama that keeps fans on the edge of their seats. Buckle up and experience the thrill — because in Formula 1, every second counts!</p>
+                </div>
+                <div class="image-section">
+                  <img src="download (8).jpg" alt="Abu Dhabi GP">
+                </div>
+            </div>
+
+              <div class="decorative-border">
+                <div class="container">
+                    <div class="text-section">
+                      <h4> Billie Eilish</h4>
+                       <p>Billie Eilish, born in 2001, took the music world by storm with her unique sound and aesthetic. Known for her ethereal voice, dark themes, and genre-blending style, she skyrocketed to fame with her 2019 album When We All Fall Asleep, Where Do We Go?, featuring hits like “bad guy” and “bury a friend.” Eilish's fashion sense and candid lyrics about mental health resonate deeply with her fans. She made history by sweeping the major categories at the 2020 Grammys and continues to innovate, pushing the boundaries of pop with her introspective and hauntingly beautiful tracks.</p>
+                       </div>
+                       <div class="image-section">
+                        <img src="Billie Eilish album cover.jpg" alt="Billie">
+                       </div>
+                    </div>
+                      
+                    <div class="decorative-border">
+                     <div class="container">
+                    <div class="text-section">
+                    <h4>Kanye West</h4>
+                    <p>Kanye West is one of the most influential and controversial figures in modern music. Emerging in the early 2000s as a producer and rapper, Kanye redefined hip-hop with groundbreaking albums like The College Dropout, My Beautiful Dark Twisted Fantasy, and Yeezus. Known for his genre-bending production, thought-provoking lyrics, and larger-than-life personality, Kanye has consistently reinvented his sound. Beyond music, he's made waves in the fashion world with his Yeezy brand. Despite his polarizing persona, Kanye's impact on music and culture is undeniable.</p>
+                    </div>
+                    <div class="image-section">
+                        <img src="Kanye.jpg" alt="Kanye">
+                      </div>
+                    </div>
+
+                     <div class="decorative-border">
+                     <div class="container">
+                    <div class="text-section">
+                      <h4>Ariana Grande</h4>
+                    <p>Ariana Grande is the reigning queen of pop with powerhouse vocals and a catalog of chart-topping hits. Rising to fame as an actress on Nickelodeon, she transitioned seamlessly into music with her debut album Yours Truly in 2013. Known for songs like “Problem,” “Thank U, Next,” and “7 Rings,” Ariana combines catchy hooks, personal lyrics, and R&B influences. Her iconic high ponytail and vocal range reminiscent of Mariah Carey have made her a global superstar. Grande's ability to channel personal challenges into empowering music has earned her legions of devoted fans.</p>
+                    </div>
+                    <div class="image-section">
+                        <img src="Aria.jpg" alt="Ariana">
+                     </div>
+                    </div>
+
+                     <div class="decorative-border"> 
+                     <div class="container">
+                    <div class="text-section">
+                      <h4>Tyler, The Creator</h4>
+                    <p>Tyler, The Creator burst onto the scene with the controversial, raw energy of his early music and the Odd Future collective. Over the years, he has evolved into one of the most creative minds in hip-hop. Albums like Flower Boy, IGOR, and Call Me If You Get Lost showcase his growth, blending jazz, rap, and funk with introspective and sometimes surreal themes. Known for his vibrant production and eccentric style, Tyler has carved out a unique space in music, fashion, and even festival culture with his Camp Flog Gnaw event. His bold artistic vision continues to push boundaries.</p>
+                     </div>
+                    <div class="image-section">
+                      <img src="Ty.jpg" alt="Tyler">
+                    </div>
+                    </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="header">
+        <h2 class="rainbow-text">Portfolio</h2>
+        </div>
+        <font face= "Snell Roundhand, cursive" color="Maroon"><p>Check out some of my projects:</p></font>
+        <table> 
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Activity 1</td>
+                    <td>COURAGE.HTML</td>
+                    <td><a href="file:///C:/Users/mikai/Downloads/ABOUTMEFINALPETA4ICTTOMAGOS/TOMAGOS_COURAGE.HTML.HTML" class="view-project-button" target="_blank">View Project</a></td>
+                </tr>
+                <tr>
+                    <td>Activity 2</td>
+                    <td>HAPPINESS.HTML</td>
+                    <td><a href="file:///C:/Users/mikai/Downloads/ABOUTMEFINALPETA4ICTTOMAGOS/TOMAGOS_HAPPINESS.HTML" class="view-project-button" target="_blank">View Project</a></td>
+                <tr>
+                    <td>Activity 3</td>
+                    <td>FORMATTINGTEXT(BREAKTAGS).HTML</td>
+                    <td><a href="file:///C:/Users/mikai/Downloads/ABOUTMEFINALPETA4ICTTOMAGOS/TOMAGOS_FORMATTING%20TEXT%20(BREAK%20TAGS).HTML" class="view-project-button" target="_blank">View Project</a></td>
+                </tr>
+                <tr>
+                    <td>Activity 4</td>
+                    <td>FORMATTINGTEXT_TOMAGOS.HTML</td>
+                    <td><a href="file:///C:/Users/mikai/Downloads/ABOUTMEFINALPETA4ICTTOMAGOS/FORMATTING%20TEXT_TOMAGOS.HTML" class="view-project-button" target="_blank">View Project</a></td>
+                </tr>
+                <tr>
+                    <td>Activity 5</td>
+                    <td>ALIGNMENT.HTML</td>
+                    <td><a href="file:///C:/Users/mikai/Downloads/ABOUTMEFINALPETA4ICTTOMAGOS/TOMAGOS_ALIGNMENT.HTML" class="view-project-button" target="_blank">View Project</a></td>
+                </tr>
+                <tr>
+                    <td>Activity 6</td>
+                    <td>Image&Marquee.html</td>
+                    <td><a href="file:///C:/Users/mikai/Downloads/ABOUTMEFINALPETA4ICTTOMAGOS/MARQUEEFILES/Image&Marquee.html" class="view-project-button" target="_blank">View Project</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="contact-info">
+        <div class="header">
+        <h2 class="rainbow-text">Contact Information</h2>
+        </div>
+        <div class="decorative-border">
+        <font face= "Snell Roundhand, cursive" color="Maroon"><p>Feel free to get in touch with me:</p></font>
+        <ul>
+            <li>Email: <a href="mailto:mikaizumi478@gmail.com" class="view-project-button" target="_blank">mikaizumi478@gmail.com</a></li> <br>
+            <li>Twitter or X: <a href="https://x.com/SalberSlayss" class="view-project-button" target="_blank">Kris 🏎</a></li> <br>
+            <li>Tiktok: <a href="https://www.tiktok.com/@kristinaslays_?is_from_webapp=1&sender_device=pc" class="view-project-button" target="_blank">Kris 🏎🇵🇭</a></li> <br>
+            <li>Whatsapp and Phone Number: 09272261659 <br> <br>
+        </div>
+        </ul>
+    </section>
+
+    <section>
+        <div class="header">
+        <h2 class="rainbow-text">Embedded Frames</h2>
+        </div>
+        <div class="decorative-border">
+        <font face= "Snell Roundhand, cursive" color="Maroon"><p>Here are four sample frames from past activities:</p></font>
+        <iframe src="file:///C:/Users/mikai/Downloads/ABOUTMEFINALPETA4ICTTOMAGOS/MARQUEEFILES/Image&Marquee.html" title="Frame 1"></iframe>
+        <iframe src="file:///C:/Users/mikai/Downloads/ABOUTMEFINALPETA4ICTTOMAGOS/TOMAGOS_ALIGNMENT.HTML" title="Frame 2"></iframe>
+        <iframe src="file:///C:/Users/mikai/Downloads/ABOUTMEFINALPETA4ICTTOMAGOS/TOMAGOS_FORMATTING%20TEXT%20(BREAK%20TAGS).HTML" title="Frame 3"></iframe>
+        <iframe src="file:///C:/Users/mikai/Downloads/ABOUTMEFINALPETA4ICTTOMAGOS/FORMATTING%20TEXT_TOMAGOS.HTML" title="Frame 4"></iframe>
+        </div>
+    </section>
+
+    <section>
+        <div class="header">
+        <h2 class="rainbow-text">Gallery of Gifs</h2>
+        </div>
+        <div class="decorative-border">
+        <font face= "Snell Roundhand, cursive" color="Maroon"><p>Here are some Gifs representing my interests:</p></font>
+        <img src="Kanyewest.gif" alt="Kanye West">
+        <img src="F1.gif" alt="Formula 1">
+        <img src="Tyler.gif" alt="Tyler, The Creator">
+        <img src="Ariana.gif" alt="Ariana Grande">
+        <img src="Lewis.gif" alt="Lewis Hamilton">
+        <img src="Tigerlewis.gif" alt="Lewis and Bruce the tiger">
+        <img src="SwimmingKitty.gif" alt="Swimming">
+        <img src="Drawing.gif" alt="Drawing">
+       </div>
+    </section>
+
+      <!-- Interactive Button -->
+      <button class="button"onclick="alert('Congrats!! You found the secret button on my website, Thank you for visiting my Website, See you again!')">Over here!</button>
+
+    <footer>
+        <div class="footer">
+        <font face= "Snell Roundhand, cursive" color="White"><p>&copy; 2024 [Kristina Cassandra N. Tomagos]. All Rights Reserved.</p></font>
+        </div>
+    </footer>
+</body>
+</html>
